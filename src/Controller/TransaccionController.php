@@ -40,9 +40,12 @@ class TransaccionController extends AbstractController
             // Verificar si el monto de la transacción es mayor que el saldo disponible
             if ($monto > $saldoDisponible) {
             $this->addFlash('error1', 'No tienes suficiente saldo para realizar esta transacción');
+
             return $this->redirectToRoute('agregar_trans');
+
             }
 
+            
             if ($monto <= $saldoDisponible && $monto > 0) {
                 $this->addFlash('exito1', 'Transacción exitosa');
                 
