@@ -55,26 +55,48 @@ button, input{
     border-style: none;
     cursor: pointer;
     font-family: "Nunito", sans-serif;
+    text-decoration: none;
 }
-.body{
 
-}
+
+
 .center{
 padding-top: 2rem;
 padding: 1.5rem;
 padding-right: 2rem;
 display: flex;
+flex-direction: column;
 justify-content: center;
-flex-direction: row;
+align-items: center;
+
 }
 
-.center img{
-    width: 30rem;
-    margin-right: 1rem;
+.center-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    font-weight: bold;
+    font-size: 25px;
+    width: 90vw;
+    text-align: justify;
 }
 
-.copyright{
+.center-text1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 35px;
+    width: 90vw;
+    text-align: justify;
+    margin-top: 5rem;
+    color: #182f95;
 }
+
+
 
 footer{
     display: flex;
@@ -353,4 +375,8 @@ footer{
 
 .monto::before{
     content: "$";
+}
+
+.value-monto{
+    margin-top: 0.8rem;
 }
